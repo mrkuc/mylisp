@@ -5,6 +5,7 @@
 (defn -main
   [& args]
   (loop []
-    (println "user>");; printにすると何故かcore/repのあとに表示されてしまう。
+    (print "user> ")
+    (flush)
     (core/rep)
     (recur)))
